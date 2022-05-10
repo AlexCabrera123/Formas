@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
+        Circulo circulo = new Circulo("Blanco",true,6);
+        Rectangulo rectangulo = new Rectangulo("Amarillo", false, 10,5);
+
+        System.out.println(circulo.obtenerArea());
+        System.out.println(circulo.obtenerPerimetro());
+        System.out.println(rectangulo.obtenerArea());
+        System.out.println(rectangulo.obtenerPerimetro());
 
 
 

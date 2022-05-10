@@ -23,7 +23,7 @@ public abstract class Figura {
         this.relleno = relleno;
     }
 
-    public double abstract obtenerArea();
+    public abstract double obtenerArea();
 
-    public double abstract obtenerPerimetro();
+    public abstract double obtenerPerimetro();
 }
