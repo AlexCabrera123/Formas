@@ -1,4 +1,6 @@
-public class Circulo extends Figura {
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+public class Circulo extends Figura implements AccionesFiguraInterface{
 
     private double radio;
 
@@ -18,12 +20,30 @@ public class Circulo extends Figura {
     @Override
     public double obtenerArea() {
 
-        return 3.1416*Math.pow(radio,2);
+        return Math.PI*Math.pow(radio,2);
     }
 
     @Override
     public double obtenerPerimetro() {
 
-        return 2*3.1416*radio;
+        return 2*Math.PI*radio;
+    }
+
+    @Override
+    public void rellenar() {
+        System.out.println("RELLENANDO FIGURA");
+
+    }
+
+    @Override
+    public void duplicar() {
+        System.out.println("HAS DUPLICADO LA FIGURA");
+
+    }
+
+    @Override
+    public Figura hacerPequenio() {
+        Circulo circulopeque = new Circulo(this.color,this.relleno,this.radio);
+        return null;
     }
 }
